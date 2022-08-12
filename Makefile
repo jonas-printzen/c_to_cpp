@@ -23,9 +23,9 @@ BINOUT:=bin
 # CXX=clang++
 CXX=g++
 
-# CXXFLAGS:=${CXXFLAGS} -fconcepts-diagnostics-depth=2 -std=c++20 -g  --coverage -Wall
-CXXFLAGS:=${CXXFLAGS} -std=c++20 -g -fno-inline --coverage -Wall
-# CXXFLAGS:=${CXXFLAGS} -std=c++20 -O3 -Wall
+# CXXFLAGS:=${CXXFLAGS} -fconcepts-diagnostics-depth=2 -std=c++17 -g  --coverage -Wall
+# CXXFLAGS:=${CXXFLAGS} -std=c++17 -g -fno-inline --coverage -Wall
+CXXFLAGS:=${CXXFLAGS} -std=c++17 -O3 -Wall
 
 ARFLAGS:=rcs
 INCS=${LIB_TARGETS:%=-I %/include} -isystem /usr/include/eigen3
